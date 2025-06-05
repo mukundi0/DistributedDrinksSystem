@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="client.controller.CustomerController">
+    <Label text="Place Order" style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="nameField" promptText="Your Name"/>
+    <ComboBox fx:id="branchBox" promptText="Select Branch"/>
+    <ComboBox fx:id="drinkBox" promptText="Select Drink"/>
+    <TextField fx:id="quantityField" promptText="Quantity"/>
+
+    <Button text="Place Order" onAction="#placeOrder"/>
+    <Label fx:id="statusLabel"/>
+</VBox>
