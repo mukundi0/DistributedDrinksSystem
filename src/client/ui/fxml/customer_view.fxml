@@ -9,12 +9,6 @@
       stylesheets="@../style.css"
       spacing="15" alignment="CENTER" prefWidth="350" prefHeight="500">
 
-    <ImageView fitWidth="100" fitHeight="100">
-        <image>
-            <Image url="@../logo.png" />
-        </image>
-    </ImageView>
-
     <Label text="Place Order" styleClass="label"/>
 
     <TextField fx:id="nameField" promptText="Your Name"/>
