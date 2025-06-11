@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="client.controller.CustomerController">
-    <Label text="Place Order" style="-fx-font-size: 18px;"/>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.controller.CustomerController"
+      stylesheets="@../style.css"
+      spacing="15" alignment="CENTER" prefWidth="350" prefHeight="500">
+
+    <ImageView fitWidth="100" fitHeight="100">
+        <image>
+            <Image url="@../logo.png" />
+        </image>
+    </ImageView>
+
+    <Label text="Place Order" styleClass="label"/>
 
     <TextField fx:id="nameField" promptText="Your Name"/>
     <ComboBox fx:id="branchBox" promptText="Select Branch"/>

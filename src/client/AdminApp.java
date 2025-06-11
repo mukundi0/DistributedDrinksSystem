@@ -6,10 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class AdminApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("ui/fxml/admin_view.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ui/fxml/admin_view.fxml")));
         stage.setTitle("Admin Dashboard");
         stage.setScene(new Scene(root));
         stage.show();
